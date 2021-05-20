@@ -3,7 +3,7 @@ This is a "Dockerized" APP developed in React Native requested by Intracon
 <br><br>
  <p align="center">
  <img src="https://i.postimg.cc/XqbxLBGd/1111111111111111111111.jpg" width="300">
- <img src="https://i.postimg.cc/bws0Q9C4/zxcxzczc.jpg" width="300">
+ <img src="https://i.postimg.cc/FscpqZgc/1111111111111111111111.jpg" width="300">
  </p>
  <br><br>
 ### Dependencies (installed automatically)
