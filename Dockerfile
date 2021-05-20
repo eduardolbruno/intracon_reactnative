@@ -1,17 +1,29 @@
-FROM node:latest
-LABEL version=1.2.1
+FROM node:14
 
-ENV ADB_IP="192.168.1.1"
-ENV REACT_NATIVE_PACKAGER_HOSTNAME="192.255.255.255"
+# ADB_IP => the IP address Android emulator
+ENV ADB_IP="192.168.232.2"
 
-EXPOSE 19000
+# REACT_NATIVE_PACKAGER_HOSTNAME => the IP address of the PC running the emulator
+ENV REACT_NATIVE_PACKAGER_HOSTNAME="192.168.0.19"
+
+EXPOSE 19000 
 EXPOSE 19001
+EXPOSE 19002
 
-RUN apt-get update && \
-    apt-get install android-tools-adb
 WORKDIR /app
 
+COPY package*.json ./
+
+RUN apt-get update -y && \
+    apt-get install android-tools-adb -y
+
+RUN npm install --global expo-cli
+
+RUN npm install
+
+COPY . .
+
 COPY package.json app.json ./
-RUN yarn --network-timeout 100000
+
 CMD adb connect $ADB_IP && \
-        yarn run android
+    expo start --android
