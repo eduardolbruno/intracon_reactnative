@@ -1,6 +1,11 @@
 # reactnative_restapi
 This is a "Dockerized" APP developed in React Native requested by Intracon
-
+<br><br>
+ <p align="center">
+ <img src="https://i.postimg.cc/XqbxLBGd/1111111111111111111111.jpg" width="300">
+ <img src="https://i.postimg.cc/bws0Q9C4/zxcxzczc.jpg" width="300">
+ </p>
+ <br><br>
 ### Dependencies (installed automatically)
 
 > react-native<br>
@@ -19,4 +24,7 @@ docker run --env ADB_IP=192.168.232.2 --env REACT_NATIVE_PACKAGER_HOSTNAME=192.1
 
 ADB_IP => the IP address of the Android emulator<br>
 REACT_NATIVE_PACKAGER_HOSTNAME => the IP address of the PC running the emulator
+
+
+
 
