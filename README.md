@@ -1,5 +1,5 @@
 # reactnative_restapi
-This is a "Dockerized" APP developed in React Native requested by Intracon
+This is a "Dockerized" APP developed in React Native
 <br><br>
  <p align="center">
  <img src="https://i.postimg.cc/XqbxLBGd/1111111111111111111111.jpg" width="300">
